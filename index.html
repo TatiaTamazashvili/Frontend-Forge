@@ -3,17 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+   <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,501,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css.map">
     <title>spotify</title>
   </head>
   <body>
-    <section class="sidebar-section"></section>
+    <!--sidebar-->
+    <aside class="sidebar">
+      <div class="mobile-aside">
+        <!--mobile-version-sidebar-->
+        <nav class="aside-top">
+          <a class="aside-btn" href="#">Music</a>
+          <a class="aside-btn" href="#">Podcasts</a>
+          <a class="aside-btn" href="#">Audiobooks</a>
+        </nav>
+          <img class="mobile-version-logos" src="assets/icons/homemmain.icons/switchicon.png" alt="add-home">
+      </div>
+      <!--desktop-version-sidebar-->
+      <div class="desktop-aside">
+        <ul class="aside-elements">
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/pin.png" alt="pin">Pins <img class="sidebar-arrow-right" src="assets/icons/sidebar.icons/sidebar.arrowicon.png" alt="arrow-right"></li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/playlisticon.png" alt="Playlists">Playlists <img class="sidebar-arrow-right" src="assets/icons/sidebar.icons/sidebar.arrowicon.png" alt="arrow-right"></li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/likedsongicon.png" alt="Liked-songs">Liked songs</li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/savesicon.png" alt="Saves">Saves</li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/albumsicon.png" alt="Albums">Albums</li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/foldersicon.png" alt="Folders">Folders</li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/podcastsicon.png" alt="Podcasts">Podcasts</li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/audiobooksicon.png" alt="Audiobooks">Audiobooks</li>
+          <li><a href="#"></a><img src="./assets/icons/sidebar.icons/artistsicon.png" alt="Artists">Artists</li>
+        </ul>
+      </div>
+        
+    </aside>
+    <!--header-->
     <header>
-      <section class="top-nav"></section>
+      <nav class="top-nav"></nav>
     </header>
     <main>
       <section class="main-content"></section>

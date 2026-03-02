@@ -1,3 +1,7 @@
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +10,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul ol {
@@ -17,8 +22,76 @@ button {
   background-color: transparent;
 }
 
-body {
-  font-family: "Satoshi", sans-serif;
+.mobile-aside {
+  height: 100px;
+  width: 100%;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+.mobile-aside .aside-btn {
+  background-color: #202020;
+  border-radius: 8px;
+  color: #E0E0E0;
+  padding: 8px 15px;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+}
+.mobile-aside img {
+  width: 19px;
+  height: 16px;
+}
+
+.desktop-aside {
+  width: clamp(250px, 27.5vw, 300px);
+  height: 100vh;
+  background-color: #111111;
+  color: #898989;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+}
+.desktop-aside li {
+  font-size: clamp(14px, 1.2rem, 2rem);
+  width: 100%;
+  height: 10%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.desktop-aside li img {
+  width: 4vw;
+  height: 4vh;
+  object-fit: scale-down;
+}
+.desktop-aside li .sidebar-arrow-right {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .desktop-aside {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .mobile-aside {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
