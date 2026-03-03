@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul ol {
@@ -111,14 +112,17 @@ body {
   justify-content: space-between;
   padding: 14px;
 }
-.madeforyou-header h2 {
+
+h2 {
   font-size: 20px;
   color: #E0E0E0;
 }
-.madeforyou-header .arrow-left {
+
+.arrow-left {
   display: none;
 }
-.madeforyou-header .arrow-right {
+
+.arrow-right {
   display: none;
 }
 
@@ -127,29 +131,6 @@ body {
   align-items: center;
   gap: 12px;
   margin: 0px 14px;
-}
-.madeforyou-card-section .madeforyou-card {
-  height: 100%;
-}
-.madeforyou-card-section .madeforyou-card .card-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px 0px;
-}
-.madeforyou-card-section .madeforyou-card .card-content h3, .madeforyou-card-section .madeforyou-card .card-content span {
-  font-size: 14px;
-  color: #E0E0E0;
-}
-.madeforyou-card-section .madeforyou-card .card-content P {
-  font-size: 12px;
-  color: #898989;
-}
-
-.madeforyou-card-section {
-  display: flex;
-  gap: 12px;
-  padding: 14px;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -160,20 +141,81 @@ body {
   display: none;
 }
 .madeforyou-card-section .madeforyou-card {
-  flex: 0 0 auto;
-  width: 170px;
-  scroll-snap-align: start;
-}
-.madeforyou-card-section .madeforyou-card .card-cover {
-  border-radius: 12px;
-  overflow: hidden;
-  aspect-ratio: 1/1;
-}
-.madeforyou-card-section .madeforyou-card .card-cover img {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+.card-content h3, .card-content span {
+  font-size: 14px;
+  color: #E0E0E0;
+}
+.card-content P {
+  font-size: 12px;
+  color: #898989;
+}
+
+.yourtopmixes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.yourtopmixes-card-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0px 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.yourtopmixes-card-section::-webkit-scrollbar {
+  display: none;
+}
+.yourtopmixes-card-section .yourtopmixes-card {
+  height: 100%;
+}
+
+.Yourfavoriteartists-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.Yourfavoriteartists-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0px 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.Yourfavoriteartists-section::-webkit-scrollbar {
+  display: none;
+}
+.Yourfavoriteartists-section img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
+.Yourfavoriteartists-section .card-content {
+  display: flex;
+  justify-content: center;
+}
+.Yourfavoriteartists-section .card-content h3 {
+  color: #E0E0E0;
 }
 
 @media (min-width: 500px) {
@@ -190,10 +232,10 @@ body {
   .mobile-picks {
     display: none;
   }
-  .madeforyou-header .arrow-left {
+  .arrow-left {
     display: unset;
   }
-  .madeforyou-header .arrow-right {
+  .arrow-right {
     display: unset;
   }
 }

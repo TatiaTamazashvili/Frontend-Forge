@@ -1,5 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@use "../base/base";
+@use "../base/reset";
 
 .main-content {
   background: $color-bg-main;
@@ -100,21 +102,21 @@
     align-items: center;
     justify-content: space-between;
     padding: 14px;
+}
 
-    h2 {
+h2 {
         font-size: $font-size-h3;
         color: $color-fg-primary;
     }
 
-    .arrow-left {
+.arrow-left {
         display: none;
     }
 
-    .arrow-right {
+.arrow-right {
         display: none;
     }
-}
-
+    
 .madeforyou-card-section {
   display: flex;
   align-items: center;
@@ -122,9 +124,20 @@
   margin: 0px 14px;
 
 
+  overflow-x: auto;          
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+
   .madeforyou-card {
     height: 100%;
-    .card-content{
+  }
+}
+
+.card-content{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -141,13 +154,20 @@
         }
 
     }
-  }
+
+
+.yourtopmixes-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
 }
 
-.madeforyou-card-section {
+.yourtopmixes-card-section {
   display: flex;
+  align-items: center;
   gap: 12px;
-  padding: 14px;
+  margin: 0px 14px;
 
   overflow-x: auto;          
   overflow-y: hidden;
@@ -157,20 +177,50 @@
   scrollbar-width: none;
   &::-webkit-scrollbar { display: none; }
 
-  .madeforyou-card {
-    flex: 0 0 auto;          
-    width: 170px;           
-    scroll-snap-align: start;
+  .yourtopmixes-card {
+    height: 100%;
+  }
+}
 
-    .card-cover {
-      border-radius: 12px;
-      overflow: hidden;
-      aspect-ratio: 1 / 1;
 
-      img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.Yourfavoriteartists-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.Yourfavoriteartists-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0px 14px;
+
+  overflow-x: auto;          
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+
+  img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      color: $color-fg-primary;
     }
   }
 }
+
+
 
 @media (min-width: 500px) {
     .main-content-btns {
@@ -191,13 +241,12 @@
     display: none;
   }
 
- .madeforyou-header {
-    .arrow-left {
+.arrow-left {
       display: unset;
     }
 
     .arrow-right {
       display: unset;
     }
-}
+
 }
