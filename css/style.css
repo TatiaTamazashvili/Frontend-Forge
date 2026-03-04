@@ -1,10 +1,9 @@
-/* Error: Undefined mixin.
- *    ,
- * 27 | @include typography-search;
- *    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\pages\_search.scss 27:1  @use
- *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\style.scss 9:1           root stylesheet */
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 9 | @use "./pages/search" as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\style.scss 9:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 27 \2502  @include typography-search;\d\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\pages\\_search.scss 27:1  @use\a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 9:1           root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 9 \2502  @use \"./pages/search\" as *;\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 9:1  root stylesheet";
 }

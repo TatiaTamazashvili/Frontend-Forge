@@ -112,6 +112,7 @@ opacity:0.6;
 gap: 20px;
 padding: 10px;
 }
+<<<<<<< Updated upstream
 //media//
 @media (max-width:768px){
     .search-mobile{
@@ -123,3 +124,16 @@ padding: 10px;
         display: none;
     }
 }
+=======
+//desktop layout//
+@media (min-width:768px){
+.search-mobile {
+    display: none;
+}
+}
+@media (max-width:768px){
+    .search-desktop {
+        display: none;
+    }
+}
+>>>>>>> Stashed changes
