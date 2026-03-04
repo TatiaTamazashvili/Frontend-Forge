@@ -62,7 +62,7 @@ font-size: 18px;
 line-height: 100%;
 letter-spacing: 3%;
 color: $color-fg-primary;
-padding: 15px;   
+padding: 15px;
 }
 }
 //cards//
@@ -111,4 +111,15 @@ grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 opacity:0.6;
 gap: 20px;
 padding: 10px;
+}
+//media//
+@media (max-width:768px){
+    .search-mobile{
+        display: none;
+    }
+}
+@media (min-width:768px){
+    .search-desktop{
+        display: none;
+    }
 }
