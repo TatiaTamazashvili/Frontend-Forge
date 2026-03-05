@@ -13,20 +13,23 @@
   <body>
     <aside class="sidebar"></aside>
     <header class="top-header">
-      <nav class="top-nav">
-        <ul class="top-nav_links">
- <!--LEFT ITEMS-->         
-      
+      <nav class="top-nav_links">
+        
+        <!--LEFT ITEMS-->
+        
+           <ul class="nav-left">
           <li><a href="#">
               <img src="assets/icons/sidebar.icons/libraryicon.png" alt="Library icon">My Library</a></li>
-           <a href="#" class="active">
+          <li><a href="#" class="active">
               <img src="assets/icons/menu.bar.icons/home.icon.thick.png" alt="Home">Home</a></li>
             <li><a href="#">
               <img src="assets/icons/menu.bar.icons/discovericon.off.png" alt="Discover icon">Discover</a></li>
             <li><a href="#">
               <img src="assets/icons/menu.bar.icons/searchicon.png" alt="Search icon">Search</a></li>
+           </ul>
  <!--RIGHT ITEMS-->  
- <li class="push right" >
+           
+            <ul class="nav-right">
            <li><a href="#">
             <img src="assets/icons/menu.bar.icons/ringicon.png" alt="ring icon"></a></li>
             <li><a href="#">
@@ -37,14 +40,53 @@
               <img src="assets/icons/menu.bar.icons/settingicon.png" alt="setting icon"></a></li>
             <li><a href="#">
               <img src="assets/icons/menu.bar.icons/profileicon.png" alt="profile icon"></a></li>
+           
         </ul>
       </nav>
     </header>
     <main>
       <section class="main-content"></section>
     </main>
-    <footer>
-      <section class="playerbar"></section>
+    <footer class="player-bar">
+      <section class="player-center">
+        <div class="player-controls">
+          <button class="play-btn">
+          <img src="assets/icons/player.icons/musicon.icon.png" alt="music icon">
+          </button>
+          <img src="assets/icons/player.icons/left.skip.icon.png" alt="left skip icon">
+          <img src="assets/icons/player.icons/right.skip.icon.png" alt="right skip icon">
+          <img src="assets/icons/player.icons/shuffle.icon.png" alt="shuffle icon">
+          <img src="assets/icons/player.icons/replay.icon.png" alt="replay icon">
+        </div>
+        <div class="progress">
+          <span>2:23</span>
+          <input type="range">
+          <span>4:46</span>
+          <img src="assets/icons/player.icons/sound.icon.png" alt="sound icon">
+        </div>
+        
+      </section>
+      <section class="player-right">
+        <img src="assets/icons/player.icons/getlucky.png" alt="get lucky icon">
+        <div class="track-info">
+
+          <h3>Get Lucky</h3>
+          <p>Daft punk</p>
+          <p>Random Access Memories</p>
+        </div>
+    
+        
+        <img src="assets/icons/player.icons/heart.icon.png" alt="heart icon">
+        <img src="assets/icons/player.icons/plus.icon.png" alt="plus icon">
+        <img src="assets/icons/player.icons/pc-lyrics.icon.png" alt="lyrics icon">
+        <img src="assets/icons/player.icons/dinamic.icon.png" alt="dinamic icon">
+        <img src="assets/icons/homemmain.icons/dots.icon.png" alt="dots icon">
+        <img src="assets/icons/player.icons/vertical.line.icon.png" alt="vertical line icon">
+        <img src="assets/icons/player.icons/circle.icon.png" alt="circle icon">
+        <img src="assets/icons/player.icons/burger.icon.png" alt="burger icon">
+
+      </section>
+
     </footer>
   </body>
 </html>

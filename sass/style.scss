@@ -1,6 +1,6 @@
 @use './base/reset' ;
 @use './base/base' ;
-
+@use "./layout/playerbar";
 @use 'layout/header';
 @use 'layout/_sidebar';
 @use 'layout/homemain';
