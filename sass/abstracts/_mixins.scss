@@ -16,16 +16,17 @@
     align-items: center;
 }
 @mixin typography-small{
-font-family: Satoshi;
+font-family: "Satoshi";
 font-weight: 400;
 font-style: Regular;
 font-size: 12px;
 line-height: 100%;
 letter-spacing: 3%;
 color: $color-fg-primary;
+
 }
 @mixin typography-sub{
-    font-family: Satoshi;
+font-family: Satoshi;
 font-weight: 400;
 font-style: Regular;
 font-size: 14px;
@@ -40,4 +41,25 @@ font-style: Medium;
 font-size: 14px;
 line-height: 100%;
 letter-spacing: 3%;
+}
+@mixin h3{
+font-family: "Satoshi",sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 3%;
+color: $color-fg-primary;
+}
+@mixin search-circular-image{
+  width:170px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@mixin cancel-icon{
+width: 40px;
+height: 40px;
+color: $color-fg-primary;
 }
