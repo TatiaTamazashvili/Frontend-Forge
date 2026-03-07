@@ -1,9 +1,9 @@
-/* Error: Can't find stylesheet to import.
+/* Error: Expected ".
  *   ,
- * 5 | @use "./layout/homemain" as *;
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * 8 | @use "./pages/home';
+ *   |                     ^
  *   '
- *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\style.scss 5:1  root stylesheet */
+ *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\style.scss 8:21  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @use \"./layout/homemain\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 5:1  root stylesheet";
+  content: "Error: Expected \".\a   \2577 \a 8 \2502  @use \"./pages/home';\d\a   \2502                      ^\a   \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 8:21  root stylesheet";
 }
