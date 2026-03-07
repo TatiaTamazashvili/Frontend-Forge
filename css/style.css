@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* Error: Can't find stylesheet to import.
  *   ,
  * 5 | @use "./layout/homemain" as *;
@@ -14,4 +15,145 @@ body::before {
   margin-bottom: 1em;
   border-bottom: 2px solid black;
   content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @use \"./layout/homemain\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 5:1  root stylesheet";
+=======
+body {
+  font-family: "Satoshi", sans-serif;
+>>>>>>> Stashed changes
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul ol {
+  list-style-type: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+.search-mobile {
+  background-color: #111111;
+}
+
+.mobile-header-search {
+  width: 100%;
+  padding: 15px;
+  padding-top: 50px;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.mobile-header-search .browse {
+  position: relative;
+  flex-grow: 1;
+}
+.mobile-header-search .browse input {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px 0 15px;
+  border-radius: 10px;
+  background-color: #202020;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  border: none;
+  outline: none;
+}
+.mobile-header-search .browse img {
+  width: 19px;
+  height: 16px;
+  align-self: center;
+  position: absolute;
+  right: 8px;
+}
+.mobile-header-search img {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.mobile-main-search h1 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  display: block;
+  padding: 15px;
+}
+.mobile-main-search h2 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  padding: 15px;
+}
+
+.Discover {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.discover-card {
+  width: 100%;
+  aspect-ratio: 1.7/1;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(30, 50, 100);
+  overflow: hidden;
+}
+.discover-card p {
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  font-family: "Satoshi";
+  font-weight: 900;
+  font-style: Black;
+  font-size: clamp(14px, 4vw, 18px);
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.discover-card img {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  transform: rotate(30deg);
+  overflow: hidden;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.genres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  opacity: 0.6;
+  gap: 20px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
