@@ -1,9 +1,19 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/base";
+@use "../base/reset";
+
+header,
+main,
+footer {
+  margin-left: 280px;
+  width: calc(100% - 280px); 
+}
+
 .top-header{
     display: flex;
     background-color: $color-bg-main;
     padding: 25px;
-    width: 100%;
     box-sizing: border-box;
 }
    
@@ -79,8 +89,7 @@
     padding-bottom: 70px;
   }
 
-<<<<<<< HEAD
-=======
+
 @media(max-width:500px){
     .top-nav_links{
         flex-direction: column;
@@ -90,5 +99,5 @@
     .push-right{
         margin-left: 0;
     }
->>>>>>> 9d55766b4f60f6b157801a8418ab8f15ca12611e
+}
 }

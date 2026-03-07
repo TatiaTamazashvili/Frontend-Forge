@@ -1,4 +1,8 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/base";
+@use "../base/reset";
+
 .player-bar{
    position: fixed;
     bottom:0;
