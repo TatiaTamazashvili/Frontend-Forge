@@ -22,6 +22,101 @@ button {
   background-color: transparent;
 }
 
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  width: auto;
+  border-radius: 12px;
+  height: 80px;
+  background: #333842;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.player-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.p {
+  font-size: 16px;
+  color: #898989;
+  margin: 0;
+}
+
+.player-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.player-controls .img {
+  width: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.player-controls img:hover {
+  transform: scale(1.1);
+}
+
+.play-btn {
+  width: 40px;
+  height: 40px;
+  background: #1ED760;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+.play-btn svg {
+  fill: white;
+  width: 38px;
+  height: 38px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.progress span {
+  font-size: 12px;
+  color: #898989;
+}
+.progress input {
+  width: 300px;
+}
+
+.player-right {
 .mobile-aside {
   height: 100px;
   width: 100%;
@@ -74,24 +169,152 @@ button {
   align-items: center;
   gap: 10px;
 }
-.desktop-aside li img {
-  width: 4vw;
-  height: 4vh;
-  object-fit: scale-down;
+.player-right img {
+  width: 51px;
+  height: 51px;
+  cursor: pointer;
 }
-.desktop-aside li .sidebar-arrow-right {
-  margin-left: auto;
+.player-right input {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
-  .desktop-aside {
+  .player-bar {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 16px;
+    border-top: 1px solid #898989;
+  }
+  body {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .player-bar {
+    height: 70px;
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .player-right {
     display: none;
   }
 }
-@media (min-width: 768px) {
-  .mobile-aside {
-    display: none;
-  }
+.search-mobile {
+  background-color: #111111;
+}
+
+.mobile-header-search {
+  width: 100%;
+  padding: 15px;
+  padding-top: 50px;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.mobile-header-search .browse {
+  position: relative;
+  flex-grow: 1;
+}
+.mobile-header-search .browse input {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px 0 15px;
+  border-radius: 10px;
+  background-color: #202020;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  border: none;
+  outline: none;
+}
+.mobile-header-search .browse img {
+  width: 19px;
+  height: 16px;
+  align-self: center;
+  position: absolute;
+  right: 8px;
+}
+.mobile-header-search img {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.mobile-main-search h1 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  display: block;
+  padding: 15px;
+}
+.mobile-main-search h2 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  padding: 15px;
+}
+
+.Discover {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.discover-card {
+  width: 100%;
+  aspect-ratio: 1.7/1;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(30, 50, 100);
+  overflow: hidden;
+}
+.discover-card p {
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  font-family: "Satoshi";
+  font-weight: 900;
+  font-style: Black;
+  font-size: clamp(14px, 4vw, 18px);
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.discover-card img {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  transform: rotate(30deg);
+  overflow: hidden;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.genres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  opacity: 0.6;
+  gap: 20px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
