@@ -6,7 +6,7 @@
 @use "./layout/header" as *;
 @use "./layout/sidebar" as *;
 @use "./pages/home';
-@use 'pages/library" as *;
+@use '.pages/library" as *;
 @use "./abstracts/variables" as *;
 @use "./abstracts/mixins" as *;
 @use "./pages/home" as *;
