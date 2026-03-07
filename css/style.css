@@ -1,9 +1,19 @@
+<<<<<<< Updated upstream
 /* Error: Can't find stylesheet to import.
  *   ,
  * 6 | @use './layout/playerbar';
  *   | ^^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
  *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\style.scss 6:1  root stylesheet */
+=======
+/* Error: expected "{".
+ *     ,
+ * 137 | >>>>>>> 9d55766b4f60f6b157801a8418ab8f15ca12611e
+ *     |                                                 ^
+ *     '
+ *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\layout\_playerbar.scss 137:49  @use
+ *   Desktop\exam!!!!!!!!!!!1\Frontend-Forge\sass\style.scss 6:1                 root stylesheet */
+>>>>>>> Stashed changes
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +23,9 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
+<<<<<<< Updated upstream
   content: "Error: Can't find stylesheet to import.\a   \2577 \a 6 \2502  @use './layout/playerbar';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 6:1  root stylesheet";
+=======
+  content: 'Error: expected "{".\a     \2577 \a 137 \2502  >>>>>>> 9d55766b4f60f6b157801a8418ab8f15ca12611e\d\a     \2502                                                  ^\a     \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\layout\\_playerbar.scss 137:49  @use\a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 6:1                 root stylesheet';
+>>>>>>> Stashed changes
 }
