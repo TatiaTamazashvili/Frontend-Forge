@@ -2,7 +2,6 @@
 @use "../abstracts/variables" as *;
 @use "../base/base" as *;
 @use "../base/reset" as *;
-
 .search-mobile {
 background-color:$color-bg-primary;
 }
@@ -74,7 +73,7 @@ padding: 10px;
 }
 .discover-card {
 width:100%;
-aspect-ratio: 1.7/1;
+height:100px;
 border-radius: 10px;
 position: relative;
 background-color:rgba(30, 50, 100, 1);
@@ -86,6 +85,7 @@ left: 20px;
 top: 20px;
 z-index: 2;
 color:rgba(255, 255, 255, 1);
+background-color: transparent;
 font-family:"Satoshi";
 font-weight: 900;
 font-style: Black;
@@ -111,4 +111,126 @@ grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 opacity:0.6;
 gap: 20px;
 padding: 10px;
+}
+
+@media (max-width:768px){
+ 
+    .search-desktop {
+        display: none;
+    }
+}
+@media (min-width:768px){
+    
+       .Discover {
+        display: flex;
+        
+    }
+    .discover-card {
+        height: 170px;
+        aspect-ratio: 1/1;     
+        img {
+            width: 104px;
+            height: 104px;
+            top: 50%;
+            left:50%;
+        }   
+    }
+    .genres {
+        opacity: 1;
+    }
+    
+    .recent-searches {
+        position: absolute;
+        left:300px;
+        top: 100px;
+    }
+    .mobile-main-search {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+}
+
+//desktop layout styling//
+.recent-searches {
+    width: 70%;
+    height: 280px;
+    h3{
+        @include h3;
+        padding: 20px;
+    }
+}
+.recent-searches-list {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.recent-searches-card {
+    width: 170px;
+    height: 205px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 1;
+    @include typography-sub;
+    color: $color-fg-primary;  
+    position: relative;
+    text-align: center;
+.main-image {
+    @include search-circular-image; 
+}
+.cancel-icon {
+    @include cancel-icon;
+    position: absolute;
+    top: 0.5px;
+    left: 130px;   
+}
+}
+.square-image{
+    @extend .recent-searches-card;
+    height: 172px;
+    position: relative;
+.background-image {
+    position: absolute;
+    left: 8%;
+    top: -6px;
+    width: 146px;
+    height: 6px;
+    opacity: 1;
+    border-top-left-radius: 7.32px;
+    border-top-right-radius: 7.32px;
+    background-color: rgba(98, 120, 177, 0.3);  
+}
+.main {
+width: 170px;
+height: auto;
+object-fit: cover;
+border-radius: 7px;
+}
+}
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    padding-top: 10px;
+.music-name {
+font-family: "Satoshi", sans-serif;
+font-weight: 500;
+font-style:medium;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 3%;
+color: $color-fg-primary;
+}
+p{
+    font-family: "Satoshi",sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 3%;
+}
 }

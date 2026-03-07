@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/base";
+@use "../base/reset";
+
+.mobile-aside{
+    height: 100px;
+    width: 100%;
+    background-color: $color-bg-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+    .aside-btn {
+    background-color: $color-bg-secondary;
+    border-radius: 8px;
+    color: $color-fg-primary;
+    padding: 8px 15px;
+    @include typography-small
+    }
+    img{
+        @include mobile-version-logos;
+    }
+}
+
+.desktop-aside {
+    width:clamp(250px, 27.5vw, 300px );
+    height: 100vh;
+    background-color: $color-bg-primary;
+    color: $color-fg-secondary;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include typography-sub;  
+    li {
+        font-size:clamp(14px, 1.2rem, 2rem);
+        width:100%;
+        height: 10%;
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    img { 
+        @include logos-desktop-version;   
+    }
+    .sidebar-arrow-right{
+        margin-left: auto;
+    }
+}
+}
+
+@media (max-width:768px){
+    .desktop-aside{
+        display: none;
+    }
+}
+@media (min-width:768px){
+    .mobile-aside{
+        display: none;
+    }
+}
