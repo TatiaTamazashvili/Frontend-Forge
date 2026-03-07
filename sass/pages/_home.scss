@@ -9,6 +9,26 @@
   padding: 16px 0px;
 }
 
+.yourtopmixes-card,
+.madeforyou-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-cover {
+
+  width: 170px;
+  height: 170px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 .main-content-btns {
   display: flex;
   gap: 10px;
@@ -137,6 +157,7 @@ h2 {
   }
 }
 
+
 .card-content{
         display: flex;
         justify-content: space-between;
@@ -220,8 +241,17 @@ h2 {
   }
 }
 
+.Yourfavoriteartists-section {
+  margin-bottom: 100px;
+}
 
-
+.Yourfavoriteartists-card {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  flex-wrap: nowrap;       
+  width: 170px;
+}
 @media (min-width: 500px) {
     .main-content-btns {
     .all-btn {
