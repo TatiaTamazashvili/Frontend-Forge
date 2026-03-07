@@ -2,7 +2,7 @@
 @use "../abstracts/variables" as *;
 @use "../base/base" as *;
 @use "../base/reset" as *;
-* {
+.search-mobile {
 background-color:$color-bg-primary;
 }
 //header//
