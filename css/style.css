@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* Error: Can't find stylesheet to import.
  *   ,
  * 5 | @use "./layout/homemain" as *;
@@ -15,6 +16,10 @@ body::before {
   margin-bottom: 1em;
   border-bottom: 2px solid black;
   content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @use \"./layout/homemain\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Desktop\\exam!!!!!!!!!!!1\\Frontend-Forge\\sass\\style.scss 5:1  root stylesheet";
+=======
+body {
+  font-family: "Satoshi", sans-serif;
+>>>>>>> Stashed changes
 =======
 body {
   font-family: "Satoshi", sans-serif;
