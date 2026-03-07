@@ -1,33 +1,35 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
+html {
+    font-size: 62.5%;
+}
 
 .profile-mobile-view {
     background-color: $color-bg-main;
-    min-height: 100vh;
+   min-height: 100vh;
     @include flexbox-center;
-    padding: 20px 15px;
+    padding: 2rem 1.5rem;
 }
 
 .content-wrapper {
-    width: 100%;
-    max-width: 600px; 
+    width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 16px; 
+    gap: 1.6rem; 
 }
 
 .card-base {
     @include profile-card;
     flex-direction: column;
-    padding: 20px;
+    padding: 2rem;
     background-color: transparent;
     box-sizing: border-box;
 }
 //profile info//
 .profile-card {
-    height: 130px;
-    max-height: 200px;
+    height: 13rem;
+    max-height: 20rem;
     @extend .card-base;
     background: linear-gradient(180deg, rgba(138, 53, 74, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%);
 }
@@ -35,12 +37,12 @@
         display: flex; 
         flex-direction: row; 
         align-items: center;
-        gap: 15px;
+        gap: 1.5rem;
     }
 
     .profile-picture {
-        width: 80px;
-        height: 80px;
+        width: 8rem;
+        height: 8rem;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -59,10 +61,10 @@
 
     .action-icons {
         display: flex;
-        gap: 10px;
+        gap: 1rem;
         img { 
-            width: 40px; 
-            height: 40px;
+            width: 4rem; 
+            height: 4rem;
             object-fit: scale-down;
             }
         }
@@ -70,8 +72,8 @@
         .stats-row {
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-top: 5px;
+            gap:0.8rem;
+            margin:0.5rem;;
             @include typography-sub;
             span { 
                 color: $color-fg-primary; 
@@ -84,16 +86,16 @@
 
         .user-id {
             @include typography-sub;
-            font-size: 11px;
+            font-size: 1.1rem;
             opacity: 0.6;
             word-break: break-all;
-            margin-top: 8px;
+            margin-top: 0.8rem;
         }
 
 //friends card//
 .friends-card {
-    height: 170px;
-    padding: 15px 20px;
+    height: 18rem;
+    padding: 1.5rem 2rem;
     background-color:inherit;
     @extend .card-base;
 }
@@ -115,13 +117,15 @@
     .friends-list {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        padding: 5px;
+        align-items: flex-start;
+        gap: 1rem;
+        
+        
 
         li {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 1.2rem;
 
             img {
                 @include logos-for-profile;
@@ -132,6 +136,7 @@
             .friend-details {
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
                 
             }
 
@@ -146,15 +151,15 @@
                 
                 @include typography-sub;
                 img { 
-                    width: 30px; 
-                    height: 30px;
+                    width: 3rem; 
+                    height: 3rem;
                 }
             }
         
 
 //payment plan//
 .plan-card {
-    height: 125px;
+    height: 12.5rem;
     @extend .card-base;
     background: linear-gradient(180deg, #10301B 0%, #111111 100%);
     align-items: flex-start;
@@ -164,19 +169,19 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 10px;
-        margin-bottom: 15px;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
         @include typography-small;
         img { 
-            width: 20px; 
-            height: 20px; 
+            width: 2rem; 
+            height: 2rem; 
         }
     }
 
     .plan-title { 
         @include h4; 
         color: $color-primary; 
-        margin-bottom: 5px; 
+        margin-bottom:0.5rem; 
     }
     .plan-price { 
         @include typography-sub; 
@@ -185,8 +190,8 @@
 //properties//
 .settings-card {
     @extend .card-base;
-    height: 140px;
-    max-height:240px ;
+    height: 14rem;
+   // max-height:24rem;//
     padding: 0;
 }
 
@@ -202,7 +207,7 @@
 
         p { 
             flex: 1; 
-            margin-left: 15px; 
+            margin-left: 1.5rem; 
             @include typography-sub; 
             color: $color-fg-primary; 
             margin-bottom: 0; 
@@ -213,3 +218,26 @@
         @include logos-for-profile;
     }
     }
+//media//
+@media (min-width:768px) {
+    html {
+    font-size: 70%;    
+    }
+
+}
+@media (min-width:1200px) {
+    html {
+        font-size: 110%;
+     
+    }
+    .friend-details {
+        display: flex;
+        
+        p{
+        font-size: 110%;}
+    }
+    .logo {
+        width: 6rem;
+        height: 6rem;
+    } 
+}

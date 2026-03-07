@@ -5,8 +5,8 @@
 @use "./base/reset" as *;
 @use "./layout/header" as *;
 @use "./layout/sidebar" as *;
-@use "./pages/home';
-@use '.pages/library" as *;
+@use "./pages/home" as *;
+@use "./pages/library";
 @use "./abstracts/variables" as *;
 @use "./abstracts/mixins" as *;
 @use "./pages/home" as *;
