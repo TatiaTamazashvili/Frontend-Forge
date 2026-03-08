@@ -3,14 +3,6 @@
 @use "../base/base";
 @use "../base/reset";
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 100;
-}
-
 .desktop-aside {
     width: 280px;
     height: 100vh;
@@ -18,9 +10,13 @@
     color: $color-fg-secondary;
     display: flex;
     flex-direction: column;
- 
     gap: 20px;
-    @include typography-sub;
+    @include typography-sub;  
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem 0;
     ul {
         display: flex;
         flex-direction: column;

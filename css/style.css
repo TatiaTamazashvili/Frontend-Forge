@@ -499,14 +499,6 @@ h2 {
     display: unset;
   }
 }
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 100;
-}
-
 .desktop-aside {
   width: 280px;
   height: 100vh;
@@ -522,6 +514,11 @@ h2 {
   line-height: 100%;
   letter-spacing: 3%;
   color: #898989;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem 0;
 }
 .desktop-aside ul {
   display: flex;
