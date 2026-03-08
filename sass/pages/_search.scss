@@ -118,16 +118,20 @@ padding: 10px;
     .search-desktop {
         display: none;
     }
+    .mobile-header-search {
+        display: flex;
+    }
 }
 @media (min-width:768px){
-    
+
        .Discover {
         display: flex;
         
     }
+    
     .discover-card {
         height: 170px;
-        aspect-ratio: 1/1;     
+        width: 170px;    
         img {
             width: 104px;
             height: 104px;
@@ -149,7 +153,11 @@ padding: 10px;
     top: 500px;
     left: 300px;
 }
+.mobile-header-search {
+    display: none;
 }
+}
+
 
 //desktop layout styling//
 .recent-searches {
@@ -233,4 +241,7 @@ p{
     line-height: 100%;
     letter-spacing: 3%;
 }
+}
+footer {
+    z-index: 999;
 }
