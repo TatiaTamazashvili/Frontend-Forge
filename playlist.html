@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="playlist-page">
     <header class="playlist-header">
-        <div class="mobile-playlist-header">
+      <!--mobile header-->
+        <div class="mobile-playlists-header">
             <div class="search-playlist">
                 <input type="text" placeholder="Search playlist">
                 <img src="./assets/icons/library.icons/search.icon.png" alt="search-playlist">
@@ -17,19 +19,22 @@
         </div>
     </header>
     <main>
+      <!--mobile main-->
         <div class="mobile-playlist-main">
             <section class="mix-card-playlist">
                 <img src="assets/images/playlist.page/daftpunk.playlist.png" alt="daftpunk-mix">
             </section>
+            <!--mix info-->
             <section class="mix-info-box">
                 <h1>Daft Punk Mix</h1>
                 <div class="mix-info-textbox">
-                   <p>By <strong>Spotify</strong></p>
+                   <p>By <span>Spotify</span></p>
                    <img src="assets/icons/profile/dot-icon.png" alt="">
                    <p>50 songs</p>
                    <img src="assets/icons/profile/dot-icon.png" alt="">
                    <p>3 hr 30 min</p>
                 </div>
+                <!--logos for actions-->
                 <div class="logos-list-for-playlist">
                 <ul class="left-logos-list">
                     <li><img src="assets/icons/playlist.page.icons/add-to-playlist.png" alt=""></li>
@@ -51,7 +56,7 @@
                         <h2>Get Lucky</h2>
                         <p>Daft Punk</p>
                     </div>
-                    <img src="assets/icons/playlist.page.icons/more.png" alt="">
+                    <img class="more-icon" src="assets/icons/playlist.page.icons/more.png" alt="">
                 </div>
 
                 <div class="playlist-song-box">
@@ -60,7 +65,7 @@
                         <h2>Instant Crush</h2>
                         <p>Daft Punk, Julian Casablancas</p>
                     </div>
-                    <img src="assets/icons/playlist.page.icons/more.png" alt="">
+                    <img class="more-icon" src="assets/icons/playlist.page.icons/more.png" alt="">
                 </div>
 
                 <div class="playlist-song-box">
@@ -69,7 +74,7 @@
                         <h2>On Melancholy Hill</h2>
                         <p>Gorillaz</p>
                     </div>
-                    <img src="assets/icons/playlist.page.icons/more.png" alt="">
+                    <img class="more-icon" src="assets/icons/playlist.page.icons/more.png" alt="">
                 </div>
                 <div class="playlist-song-box">
                     <img src="assets/images/playlist.page/gorillaz.mix.box.png" alt="">
@@ -77,7 +82,7 @@
                         <h2>On Melancholy Hill</h2>
                         <p>Gorillaz</p>
                     </div>
-                    <img src="assets/icons/playlist.page.icons/more.png" alt="">
+                    <img class="more-icon" src="assets/icons/playlist.page.icons/more.png" alt="">
             </section>
         </div>
     </main>
@@ -152,6 +157,6 @@
           />
         </section>
       </footer>
-</div>
+  </div>
 </body>
 </html>
