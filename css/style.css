@@ -258,6 +258,9 @@ footer,
   background: #060606;
   color: #E0E0E0;
   padding: 16px 0px;
+  margin-bottom: 81px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
 }
 
 .yourtopmixes-card,
@@ -466,10 +469,6 @@ h2 {
 }
 .Yourfavoriteartists-section .card-content h3 {
   color: #E0E0E0;
-}
-
-.Yourfavoriteartists-section {
-  margin-bottom: 100px;
 }
 
 .Yourfavoriteartists-card {
