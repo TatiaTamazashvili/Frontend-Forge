@@ -5,7 +5,8 @@
 
 header,
 main,
-footer {
+footer,
+.top-header {
   margin-left: 280px;
   width: calc(100% - 280px); 
 }
@@ -94,7 +95,8 @@ footer {
 
   @media (max-width: 768px) {
   header,
-  main {
+  main, footer,
+  .top-header {
     margin-left: 0;
     width: 100%;
   }

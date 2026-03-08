@@ -158,7 +158,8 @@ h3 {
 }
 header,
 main,
-footer {
+footer,
+.top-header {
   margin-left: 280px;
   width: calc(100% - 280px);
 }
@@ -237,7 +238,8 @@ footer {
 }
 @media (max-width: 768px) and (max-width: 768px) {
   header,
-  main {
+  main, footer,
+  .top-header {
     margin-left: 0;
     width: 100%;
   }
@@ -787,6 +789,267 @@ main {
   width: 40px;
   height: 40px;
   z-index: 1;
+}
+
+.search-mobile {
+  background-color: #060606;
+}
+
+.mobile-header-search {
+  width: 100%;
+  padding: 15px;
+  padding-top: 50px;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.mobile-header-search .browse {
+  position: relative;
+  flex-grow: 1;
+}
+.mobile-header-search .browse input {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px 0 15px;
+  border-radius: 10px;
+  background-color: #202020;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  border: none;
+  outline: none;
+}
+.mobile-header-search .browse img {
+  width: 19px;
+  height: 16px;
+  align-self: center;
+  position: absolute;
+  right: 8px;
+}
+.mobile-header-search img {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.mobile-main-search h1 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  display: block;
+  padding: 15px;
+}
+.mobile-main-search h2 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  padding: 15px;
+}
+
+.Discover {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.discover-card {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(30, 50, 100);
+  overflow: hidden;
+}
+.discover-card p {
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-family: "Satoshi";
+  font-weight: 900;
+  font-style: Black;
+  font-size: clamp(14px, 4vw, 18px);
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.discover-card img {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  transform: rotate(30deg);
+  overflow: hidden;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.genres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  opacity: 0.6;
+  gap: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .search-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .search-mobile {
+    display: block;
+  }
+  .mobile-header-search {
+    display: none;
+  }
+  .recent-searches {
+    width: 100%;
+    max-width: 800px;
+  }
+  .mobile-main-search {
+    position: static;
+  }
+  .Discover {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  .discover-card {
+    height: 170px;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .discover-card img {
+    width: 104px;
+    height: 104px;
+    top: 50%;
+    left: 50%;
+  }
+  .genres {
+    opacity: 1;
+  }
+}
+.recent-searches {
+  width: 70%;
+  height: 280px;
+}
+.recent-searches h3 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  padding: 20px;
+}
+
+.recent-searches-list {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.recent-searches-card, .square-image {
+  width: 170px;
+  height: 205px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 1;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+  color: #E0E0E0;
+  position: relative;
+  text-align: center;
+}
+.recent-searches-card .main-image, .square-image .main-image {
+  width: 170px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.recent-searches-card .cancel-icon, .square-image .cancel-icon {
+  width: 40px;
+  height: 40px;
+  color: #E0E0E0;
+  position: absolute;
+  top: 0.5px;
+  left: 130px;
+}
+
+.square-image {
+  height: 172px;
+  position: relative;
+}
+.square-image .background-image {
+  position: absolute;
+  left: 8%;
+  top: -6px;
+  width: 146px;
+  height: 6px;
+  opacity: 1;
+  border-top-left-radius: 7.32px;
+  border-top-right-radius: 7.32px;
+  background-color: rgba(98, 120, 177, 0.3);
+}
+.square-image .main {
+  width: 170px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  padding-top: 10px;
+}
+.text-box .music-name {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+}
+.text-box p {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */
