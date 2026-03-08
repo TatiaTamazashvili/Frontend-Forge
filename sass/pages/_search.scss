@@ -4,6 +4,7 @@
 @use "../base/reset" as *;
 .search-mobile {
 background-color:$color-bg-main;
+
 }
 //header//
 .mobile-header-search{
@@ -118,49 +119,46 @@ padding: 10px;
     .search-desktop {
         display: none;
     }
-}
-@media (min-width: 768px) {
-  .search-mobile {
-    display: block;  
-  }
-
-  .mobile-header-search {
-    display: none;
-  }
-
-  .recent-searches {
-    width: 100%;
-    max-width: 800px;
-  }
-
-  .mobile-main-search {
-    position: static;
-  }
-
-  .Discover {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .discover-card {
-    height: 170px;
-    width: 100%;
-    aspect-ratio: 1/1;
-
-    img {
-      width: 104px;
-      height: 104px;
-      top: 50%;
-      left: 50%;
+    .mobile-header-search {
+        display: flex;
     }
-  }
-
-  .genres {
-    opacity: 1;
-  }
 }
+@media (min-width:768px){
+
+       .Discover {
+        display: flex;
+        
+    }
+    
+    .discover-card {
+        height: 170px;
+        width: 170px;    
+        img {
+            width: 104px;
+            height: 104px;
+            top: 50%;
+            left:50%;
+        }   
+    }
+    .genres {
+        opacity: 1;
+    }
+    
+    .recent-searches {
+        position: absolute;
+        left:300px;
+        top: 100px;
+    }
+    .mobile-main-search {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+.mobile-header-search {
+    display: none;
+}
+}
+
 
 //desktop layout styling//
 .recent-searches {
@@ -244,4 +242,7 @@ p{
     line-height: 100%;
     letter-spacing: 3%;
 }
+}
+footer {
+    z-index: 999;
 }
