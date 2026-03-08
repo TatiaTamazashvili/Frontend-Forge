@@ -7,6 +7,9 @@
   background: $color-bg-main;
   color: $color-fg-primary;
   padding: 16px 0px;
+  margin-bottom: 81px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
 }
 
 .yourtopmixes-card,
@@ -241,9 +244,7 @@ h2 {
   }
 }
 
-.Yourfavoriteartists-section {
-  margin-bottom: 100px;
-}
+
 
 .Yourfavoriteartists-card {
   display: flex;
