@@ -25,8 +25,7 @@ body {
   font-family: "Satoshi", sans-serif;
 }
 
-.player-center,
-.player-right {
+.pleyer-desktop {
   display: none;
 }
 
@@ -108,6 +107,85 @@ body {
 @media (min-width: 500px) {
   .mobile-player-bar {
     display: none;
+  }
+  .pleyer-desktop {
+    display: unset;
+  }
+  .pleyer-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    background-color: #333842;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 999;
+    box-sizing: border-box;
+  }
+  .pleyer-desktop img {
+    height: 38px;
+    width: 38px;
+  }
+  .pleyer-desktop button {
+    cursor: pointer;
+  }
+  .player-controls,
+  .player-actions {
+    margin: 0px 20px;
+  }
+  .player-track {
+    display: flex;
+  }
+  .player-track img {
+    width: 51px;
+    height: 51px;
+    border-radius: 3px;
+  }
+  .player-song {
+    color: #E0E0E0;
+    font-size: 14px;
+  }
+  .player-artist,
+  .player-album {
+    color: #898989;
+    font-size: 14px;
+  }
+  .player-meta {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+  }
+  .progress {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .progress span {
+    color: #898989;
+  }
+  .progress input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #E0E0E0 0%, #E0E0E0 49%, #323232 49%, #323232 100%);
+    cursor: pointer;
+  }
+  .progress input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E0E0E0;
+    opacity: 0;
+    transition: opacity 0.15s ease;
   }
 }
 .header-nav {
@@ -215,7 +293,8 @@ body {
 header,
 main,
 footer,
-.site-header {
+.site-header,
+.pleyer-desktop {
   margin-left: 280px;
   width: calc(100% - 280px);
 }
@@ -223,7 +302,8 @@ footer,
 @media (max-width: 768px) {
   header,
   main, footer,
-  .site-header {
+  .site-header,
+  .pleyer-desktop {
     margin-left: 0;
     width: 100%;
   }

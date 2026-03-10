@@ -129,7 +129,8 @@
 header,
 main,
 footer,
-.site-header {
+.site-header,
+.pleyer-desktop {
   margin-left: 280px;
   width: calc(100% - 280px); 
 }
@@ -137,7 +138,8 @@ footer,
   @media (max-width: 768px) {
   header,
   main, footer,
-  .site-header {
+  .site-header,
+  .pleyer-desktop {
     margin-left: 0;
     width: 100%;
   }
