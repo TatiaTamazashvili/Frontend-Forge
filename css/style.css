@@ -254,252 +254,6 @@ footer,
     margin-left: 0;
   }
 }
-.main-content {
-  background: #060606;
-  color: #E0E0E0;
-  padding: 16px 0px;
-  margin-bottom: 81px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-}
-
-.yourtopmixes-card,
-.madeforyou-card {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card-cover {
-  width: 170px;
-  height: 170px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.card-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.main-content-btns {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  overflow-x: auto;
-  padding: 4px 14px;
-}
-.main-content-btns button {
-  flex: 0 0 auto;
-  font-size: 14px;
-  color: #E0E0E0;
-  background: #202020;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
-}
-.main-content-btns button:hover {
-  background: rgba(146, 138, 138, 0.1);
-  border-color: rgba(189, 174, 174, 0.16);
-}
-.main-content-btns .all-btn {
-  display: none;
-}
-
-.mobile-picks {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin: 8px 15px;
-}
-
-.mobile-picks-card {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  padding: 10px;
-  min-height: 64px;
-}
-
-.mobile-picks-cover {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  overflow: hidden;
-  flex: 0 0 auto;
-}
-.mobile-picks-cover img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.mobile-picks-content {
-  min-width: 0;
-}
-.mobile-picks-content h4 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.mobile-picks-content p {
-  font-size: 12px;
-  color: #898989;
-  margin: 4px 0 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.madeforyou-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px;
-}
-
-h2 {
-  font-size: 20px;
-  color: #E0E0E0;
-}
-
-.arrow-left {
-  display: none;
-}
-
-.arrow-right {
-  display: none;
-}
-
-.madeforyou-card-section {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0px 14px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.madeforyou-card-section::-webkit-scrollbar {
-  display: none;
-}
-.madeforyou-card-section .madeforyou-card {
-  height: 100%;
-}
-
-.card-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px 0px;
-}
-.card-content h3, .card-content span {
-  font-size: 14px;
-  color: #E0E0E0;
-}
-.card-content P {
-  font-size: 12px;
-  color: #898989;
-}
-
-.yourtopmixes-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px;
-}
-
-.yourtopmixes-card-section {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0px 14px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.yourtopmixes-card-section::-webkit-scrollbar {
-  display: none;
-}
-.yourtopmixes-card-section .yourtopmixes-card {
-  height: 100%;
-}
-
-.Yourfavoriteartists-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px;
-}
-
-.Yourfavoriteartists-section {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0px 14px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.Yourfavoriteartists-section::-webkit-scrollbar {
-  display: none;
-}
-.Yourfavoriteartists-section img {
-  height: 170px;
-  width: 170px;
-  border-radius: 50%;
-}
-.Yourfavoriteartists-section .card-content {
-  display: flex;
-  justify-content: center;
-}
-.Yourfavoriteartists-section .card-content h3 {
-  color: #E0E0E0;
-}
-
-.Yourfavoriteartists-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 170px;
-}
-
-@media (min-width: 500px) {
-  .main-content-btns .all-btn {
-    display: unset;
-    background: #E0E0E0;
-    color: #111111;
-  }
-  .main-content-btns .all-btn:hover {
-    background: #E0E0E0;
-    border-color: transparent;
-    cursor: default;
-  }
-  .mobile-picks {
-    display: none;
-  }
-  .arrow-left {
-    display: unset;
-  }
-  .arrow-right {
-    display: unset;
-  }
-}
 .desktop-aside {
   width: 280px;
   height: 100vh;
@@ -1460,6 +1214,198 @@ html {
 
 footer {
   z-index: 999;
+}
+
+.song-page {
+  padding: 32px;
+  margin-bottom: 81px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(6, 6, 6, 0.3764705882) 0%, rgba(138, 157, 187, 0.28) 100%);
+}
+
+.song-container {
+  border: rgba(137, 137, 137, 0.1568627451);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 32px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  gap: 32px;
+  color: #e0e0e0;
+}
+
+.song-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.album-cover img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.song-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 700px;
+}
+
+.song-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.song-meta {
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+  color: #898989;
+}
+
+.song-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #898989;
+  font-size: 16px;
+}
+
+.song-genres {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+}
+.song-genres li {
+  gap: 10px;
+  font-size: 12px;
+  color: #898989;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  padding: 6px 16px;
+  border-radius: 500px;
+}
+
+.artists {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+.artists .artist-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.artists .artist-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-items: center;
+  text-align: center;
+}
+
+figcaption h4 {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+figcaption p {
+  font-size: 16px;
+  color: #898989;
+  margin: 0;
+}
+
+.song-tabs {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+  color: #898989;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.tab-item {
+  border: none;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  transition: 0.2s ease;
+  background: transparent;
+  cursor: pointer;
+  color: #898989;
+}
+.tab-item:hover {
+  color: #e0e0e0;
+}
+.tab-item.active {
+  color: #1ed760;
+}
+.tab-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 2px;
+  background-color: #1ed760;
+}
+
+.Lyrics-container {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.Lyrics-container .lyrics-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 10px;
+  min-width: 30px;
+}
+.Lyrics-container .lyrics-actions img {
+  width: 20px;
+  height: auto;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.Lyrics-container .lyrics-actions img:hover {
+  opacity: 1;
+}
+.Lyrics-container .lyrics-text {
+  flex: 1;
+}
+.Lyrics-container .lyrics-text p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
