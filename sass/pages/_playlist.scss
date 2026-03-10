@@ -13,6 +13,21 @@ width: 100%;
    background-color: inherit;
  }
 //header//
+.my-isolated-header {
+    // ვაუქმებთ გლობალურ მარჯინს კონკრეტულად ამ header-ისთვის
+    margin-left: 0 !important;
+    width: 100% !important;
+  
+    aside {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 100vh;
+      background-color: #0d101a; // ჩაანაცვლე შენი ფერით
+      z-index: 1000;
+    }
+  }
 .mobile-playlists-header {
     width: 100%;
     padding: 6rem 1.5rem 0.5rem 1.5rem;
@@ -144,7 +159,7 @@ justify-content: space-between;
     width: 100%;
     display: flex;
     flex-direction: column;
-    
+    border-radius: 10px;
 }
 .aside-playlist-right {
     position: absolute;
@@ -204,7 +219,9 @@ justify-content: space-between;
     }
     .logos-list-for-playlist-desktop {
         @extend .logos-list-for-playlist;
-        width: 75%;
+        justify-content: space-between;
+        max-width: 75%;
+        padding-right: 20px;
     }
     
         .left-logos-list-desktop {
@@ -230,6 +247,7 @@ justify-content: space-between;
     @include typography-sub;
     width: 100%;
     gap: 0;
+    padding-right: 100px;
 }
 .playlist-desktop {
     height: 500px;
@@ -241,9 +259,9 @@ img {
 }
 }
 .songlist-header-desktop-playlist {
-    width: 1060px;
+    width: 65%;
     display: grid;
-     grid-template-columns: 45px 300px 300px 70px 40px;
+     grid-template-columns: 45px 1.5fr 1.5fr 70px 40px 1fr;
     @include typography-sub;
     border-bottom:2px solid rgba(137, 137, 137, 0.15);
     padding-bottom: 12px;
@@ -254,8 +272,9 @@ img {
 }
 .playlist-song-box-desktop {
     display: grid;
-    grid-template-columns: 45px 300px 300px 70px 40px ;
+    grid-template-columns: 45px 1.5fr 1.5fr 70px 40px 1fr ;
     align-items: center;
+    width: 65%;
     
     h2 {
         @include typography-search;
@@ -280,6 +299,37 @@ img {
     }
     .desktop-main-playlist-page {display: none;}
 }
+@media (max-width: 1200px) and (min-width: 500px) {
+    .playlist-header {
+        .nav-left {
+            gap: 10px;
+    }
+    .aside-playlist-right {
+        display: none; 
+    }
+}
+.aside-playlist-right {
+    display: none;
+}
+.playlist-song-list-desktop {
+    gap: 10px;
+    width: 100vw;
+    height: 600px;
+    max-height: 100vh;
+    padding-right: 0;
+    display: grid;
+    justify-content: left;
+
+
+}
+.playlist-song-box-desktop {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 10px 1.7fr 1.5f 30px 40px;
+    font-size: smaller;
+  
+}
+}
 
 @media (min-width:768px) {
 
@@ -289,4 +339,13 @@ img {
     .mobile-playlist-main {
         display: none;
     }
+    .playlist-page {
+        background: #000;
+      }
+      
+      .desktop-main-playlist-page {
+        background: linear-gradient(to bottom, #1f2759 0%, #0d101a 40%, #0d101a 100%);
+        border-top-left-radius: 12px;
+        overflow: hidden;
+      }
 }
