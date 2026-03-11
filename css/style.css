@@ -1989,4 +1989,273 @@ figcaption p {
   margin-left: 40px;
 }
 
+.main-section-artists {
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 10px;
+  margin-bottom: 200px;
+}
+
+.artist-info-container {
+  width: 100%;
+  height: 45%;
+  border: 2px solid rebeccapurple;
+  position: relative;
+}
+
+.artist-background-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 2px solid blue;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to bottom, #e6e6e6 0%, #7d7d7d 55%, #1c1c1c 100%);
+  overflow: hidden;
+}
+.artist-background-container .background-image-artist {
+  width: auto;
+  height: 450px;
+  border-radius: 10px 10px 0 0;
+  margin-left: 25%;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+.arist-info-textbox {
+  position: absolute;
+  bottom: 34px;
+  left: 37px;
+  z-index: 2;
+  color: #E0E0E0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.arist-info-textbox .artist-name {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 50px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.arist-info-textbox .listeners-num {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+
+.artist-info-logos {
+  width: 300px;
+  position: absolute;
+  bottom: 34px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+.artist-info-logos button {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+  padding: 10px 20px;
+  text-align: center;
+  background: rgba(137, 137, 137, 0.25);
+  border: 2px solid rgba(137, 137, 137, 0.25);
+  border-radius: 44px;
+}
+
+.most-played-container {
+  height: max-content;
+  width: 100%;
+  position: relative;
+}
+
+.artist-info-nav {
+  display: flex;
+  gap: 50px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+  align-items: center;
+  padding: 10px 48px;
+  border-bottom: 1px solid rgba(137, 137, 137, 0.2);
+}
+.artist-info-nav a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 8px;
+  transition: color 0.2s ease;
+}
+.artist-info-nav a:hover {
+  color: #ffffff;
+}
+.artist-info-nav a.active-nav-element {
+  color: #ffffff;
+}
+.artist-info-nav a.active-nav-element::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: #1ed760;
+  border-radius: 2px;
+}
+
+.most-played-home-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+.most-played-home-box h3 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  margin-bottom: 20px;
+  color: #E0E0E0;
+}
+.most-played-home-box h4 {
+  color: #898989;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  font-size: 16px;
+}
+.most-played-home-box img {
+  width: 51px;
+  height: 51px;
+}
+
+.playlist-song-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.playlist-song-textbox h3 {
+  margin-bottom: 0%;
+}
+
+.most-played-home-list {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px;
+}
+.most-played-home-list .playlist-song-box-desktop {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.most-played-home-list .playlist-song-box-desktop h3 {
+  font-family: Satoshi;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.most-played-home-list .song-box-left-column {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.most-played-home-list .song-box-left-column p {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+}
+
+.main-section-artists {
+  position: relative;
+}
+
+.aside-artist-pick {
+  width: 300px;
+  position: absolute;
+  right: 45px;
+  top: 61%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aside-artist-pick h3 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+}
+
+.card-pick-artist {
+  width: 100%;
+  height: 150px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+  display: flex;
+  gap: 20px;
+  background: rgba(24, 25, 30, 0.3);
+  border-radius: 10px;
+}
+.card-pick-artist img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  align-self: center;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.card-pick-artist p {
+  padding: 20px;
+}
+
+.card-pick-artist-img img {
+  width: 300px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: fill;
+}
+
 /*# sourceMappingURL=style.css.map */
