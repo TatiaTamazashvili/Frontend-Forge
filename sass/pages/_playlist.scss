@@ -14,7 +14,6 @@ width: 100%;
  }
 //header//
 .my-isolated-header {
-    // ვაუქმებთ გლობალურ მარჯინს კონკრეტულად ამ header-ისთვის
     margin-left: 0 !important;
     width: 100% !important;
   
@@ -155,11 +154,12 @@ justify-content: space-between;
 
 //desktop version//
 .desktop-main-playlist-page {
-    height: 100vh;
+    height:100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    margin-bottom: 200px;
 }
 .aside-playlist-right {
     position: absolute;

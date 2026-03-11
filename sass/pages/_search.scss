@@ -133,8 +133,9 @@ padding: 10px;
     }
     
     .discover-card {
-        height: 170px;
-        width: 170px;    
+        height: 165px;
+        width: 165px;
+        aspect-ratio: 1/1;  
         img {
             width: 104px;
             height: 104px;
@@ -144,6 +145,12 @@ padding: 10px;
     }
     .genres {
         opacity: 1;
+        gap: 10px;
+        .discover-card {
+            height: 165px;
+            width: 165px;
+            gap: 10px;
+        }
     }
     
     .recent-searches {
@@ -158,6 +165,21 @@ padding: 10px;
 }
 .mobile-header-search {
     display: none;
+}
+.search-main-content {
+    height:120vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 200px;
+    border: 1px solid $color-bg-secondary;
+    .mobile-main-search {
+    left: 280px;
+    }
+  .Discover {
+    padding: 10px;
+  }
 }
 }
 

@@ -44,9 +44,8 @@ mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(
     .artist-name {
         font-family: "Satoshi",sans-serif;
         font-weight: 900;
-        font-style: Black;
+        font-style:black;
         font-size: 50px;
-        leading-trim: NONE;
         line-height: 100%;
         letter-spacing: 0%;
         
@@ -56,7 +55,6 @@ mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(
     font-weight: 500;
     font-style: Medium;
     font-size: 14px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 3%;
 }
@@ -73,8 +71,8 @@ mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(
         @include typography-sub;
         padding: 10px 20px;
         text-align: center;
-        background: rgba(137, 137, 137, 0.25);
-        border: 2px solid rgba(137, 137, 137, 0.25);
+        background: $color-fg-tertiary;
+        border: 2px solid $color-fg-tertiary;
         border-radius: 44px;
     }
 }
@@ -92,30 +90,30 @@ mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(
     color: $color-fg-secondary;
     align-items: center;
     padding: 10px 48px;
-    border-bottom: 1px solid rgba(137, 137, 137, 0.2);
+    border-bottom: 1px solid $color-fg-tertiary;
     a {
         text-decoration: none;
         color: inherit; 
-        position: relative; // 👈 აუცილებელია ხაზის სწორად დასასმელად
-        padding-bottom: 8px; // 👈 ტექსტსა და ხაზს შორის მანძილი
+        position: relative;
+        padding-bottom: 8px;
         transition: color 0.2s ease;
 
         &:hover {
-            color: #ffffff; // hover-ზე გათეთრება (შეგიძლია შენი ცვლადი ჩასვა)
+            color:$color-bg-light-main;
         }
 
         &.active-nav-element {
-            color: #ffffff; // აქტიური ტექსტის ფერი
+            color:$color-bg-light-main;
 
             &::after {
                 content: "";
                 position: absolute;
-                bottom: -20px; // 👈 ოდნავ ქვემოთ ჩამოსწევს, რომ ზუსტად border-bottom-ზე დაჯდეს
+                bottom: -20px;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 60px; // მწვანე ხაზის სიგრძე
+                width: 60px;
                 height: 2px;
-                background-color: #1ed760; // მწვანე ფერი
+                background-color:$color-primary;
                 border-radius: 2px;
             }
         }
@@ -166,7 +164,6 @@ img {
             font-weight: 500;
             font-style: Medium;
             font-size: 16px;
-            leading-trim: NONE;
             line-height: 100%;
             letter-spacing: 3%;
             
