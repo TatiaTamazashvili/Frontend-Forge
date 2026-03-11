@@ -8,85 +8,69 @@
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="mobile-header-search">
-            <div class="browse">
-                <input type="text" name="search" id="search" placeholder="What do you want to play?">
-                <img src="assets/icons/menu.bar.icons/searchicon.png" alt="search">
-            </div>
-            <img src="assets/icons/menu.bar.icons/cameraicon.png" alt="search-by-photo" class="camera-icon">
+     <!--header-->
+
+     <header class="site-header">
+      <nav class="header-nav">
+        <!-- left side -->
+        <div class="nav-left">
+          <a href="#" class="nav-item active">
+            <img
+              alt="home. icon"
+              src="assets/icons/menu.bar.icons/home.active.icon.svg"
+            />
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-item">
+            <img
+              alt="discover icon"
+              src="assets/icons/menu.bar.icons/star.off.icon.svg"
+            />
+            <span>Discover</span>
+          </a>
+          <a href="#" class="nav-item">
+            <img
+              alt="search icon"
+              src="assets/icons/menu.bar.icons/search.off.icon.svg"
+            />
+            <span>Search</span>
+          </a>
         </div>
-        <!--desktop header-->
-        <div class="top-header">
-         <nav class="top-nav_links">
-           <!--LEFT ITEMS-->
-           <ul class="nav-left">
-             <li>
-               <a href="#" class="active">
-                 <img
-                   src="assets/icons/menu.bar.icons/home.icon.thick.png"
-                   alt="Home"
-                 />Home</a
-               >
-             </li>
-             <li>
-               <a href="#">
-                 <img
-                   src="assets/icons/menu.bar.icons/discovericon.off.png"
-                   alt="Discover icon"
-                 />Discover</a
-               >
-             </li>
-             <li>
-               <a href="#">
-                 <img
-                   src="assets/icons/menu.bar.icons/searchicon.png"
-                   alt="Search icon"
-                 />Search</a
-               >
-             </li>
-           </ul>
-   
-           <!--RIGHT ITEMS-->
-           <ul class="nav-right">
-             <li>
-               <a href="#">
-                 <img
-                   src="assets/icons/menu.bar.icons/ringicon.png"
-                   alt="ring icon"
-               /></a>
-             </li>
-             <li>
-               <a href="#">
-                 <img
-                   src="assets/icons/menu.bar.icons/lockicon.png"
-                   alt="lock icon"
-               /></a>
-             </li>
-             <li>
-               <a href="#">
-                 <img
-                   src="assets/icons/menu.bar.icons/twomanicon.png"
-                   alt="twoman icon"
-               /></a>
-             </li>
-             <li>
-               <a href="#">
-                 <img
-                   src="assets/icons/menu.bar.icons/settingicon.png"
-                   alt="setting icon"
-               /></a>
-             </li>
-             <li>
-               <a href="#">
-                 <img
-                   src="assets/icons/menu.bar.icons/profileicon.png"
-                   alt="profile icon"
-               /></a>
-             </li>
-           </ul>
-         </nav>
-      </div>
+
+        <!-- right side -->
+        <div class="nav-right">
+          <button class="icon-btn" title="Notifications">
+            <img
+              alt="nofication icon"
+              src="assets/icons/menu.bar.icons/bell.icon.svg"
+            />
+          </button>
+          <button class="icon-btn" title="Lock">
+            <img
+              alt="lock icon"
+              src="assets/icons/menu.bar.icons/lock.icon.svg"
+            />
+          </button>
+          <button class="icon-btn" title="Friends">
+            <img
+              alt="firiends icon"
+              src="assets/icons/menu.bar.icons/twoman.icon.svg"
+            />
+          </button>
+          <button class="icon-btn" title="Settings">
+            <img
+              alt="settings icon"
+              src="assets/icons/menu.bar.icons/setting.icon.svg"
+            />
+          </button>
+          <button class="avatar-btn">
+            <img
+              alt="avatar icon"
+              src="assets/icons/menu.bar.icons/profile.icon.svg"
+            />
+          </button>
+        </div>
+      </nav>
     </header>
 
     <!--desktop aside layout-->
@@ -298,77 +282,148 @@
         </div>
       </main>
 
-
-          <!-- footer / player bar -->
+    <!-- footer / player bar -->
     <footer class="player-bar">
-      <section class="player-center">
+      <!-- Left: Controls -->
+      <section class="pleyer-desktop">
         <div class="player-controls">
-          <button class="play-btn">
+          <button class="btn btn-play" aria-label="Pause">
             <img
-              src="assets/icons/player.icons/musicon.icon.png"
-              alt="music icon"
+              alt="pause button"
+              src="assets/icons/player.icons/play button.svg"
             />
           </button>
-          <img
-            src="assets/icons/player.icons/left.skip.icon.png"
-            alt="left skip icon"
-          />
-          <img
-            src="assets/icons/player.icons/right.skip.icon.png"
-            alt="right skip icon"
-          />
-          <img
-            src="assets/icons/player.icons/shuffle.icon.png"
-            alt="shuffle icon"
-          />
-          <img
-            src="assets/icons/player.icons/replay.icon.png"
-            alt="replay icon"
-          />
+          <button>
+            <img alt="Previous" src="assets/icons/player.icons/skip.left.svg" />
+          </button>
+          <button>
+            <img alt="next" src="assets/icons/player.icons/skip.right.svg" />
+          </button>
+          <button>
+            <img alt="shuffle" src="assets/icons/player.icons/suffle.svg" />
+          </button>
+          <button>
+            <img alt="repeat" src="assets/icons/player.icons/restart.svg" />
+          </button>
         </div>
+
         <div class="progress">
           <span>2:23</span>
           <input type="range" />
           <span>4:46</span>
+          <img src="assets/icons/player.icons/voice.svg" alt="sound icon" />
+        </div>
+
+        <!-- Right: Track info -->
+        <div class="player-track">
           <img
-            src="assets/icons/player.icons/sound.icon.png"
-            alt="sound icon"
+            class="player-cover"
+            src="assets/icons/player.icons/album.cover.png"
+            alt="album cover"
           />
+          <div class="player-meta">
+            <span class="player-song">Get Lucky</span>
+            <span class="player-artist">Daft Punk</span>
+            <span class="player-album">Random Access Memories</span>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="player-actions">
+          <button>
+            <img alt="heart icon" src="assets/icons/player.icons/pc-like.svg" />
+          </button>
+          <button>
+            <img alt="plus icon" src="assets/icons/player.icons/plus.svg" />
+          </button>
+          <button>
+            <img
+              alt="lyrics icon"
+              src="assets/icons/player.icons/pc-lyrics.svg"
+            />
+          </button>
+          <button>
+            <img alt="icon" src="assets/icons/player.icons/dinamik.svg" />
+          </button>
+          <button>
+            <img
+              alt="dots"
+              src="assets/icons/player.icons/pc-playing-more.svg"
+            />
+          </button>
+          <button>
+            <img alt="dj icon" src="assets/icons/player.icons/image 19.svg" />
+          </button>
+          <button>
+            <img alt="queue" src="assets/icons/player.icons/pc-queue.svg" />
+          </button>
         </div>
       </section>
-      <section class="player-right">
-        <img
-          src="assets/icons/player.icons/getlucky.png"
-          alt="get lucky icon"
-        />
-        <div class="track-info">
-          <h3>Get Lucky</h3>
-          <p>Daft punk</p>
-          <p>Random Access Memories</p>
+
+      <!-- Mobile Player Bar -->
+      <section class="mobile-player-bar">
+        <!-- Mini Player -->
+        <div class="mini-player">
+          <div class="mini-player-left">
+            <img
+              class="mini-player-cover"
+              src="assets/icons/mob.player.icon/album.cover.png"
+              alt="Get Lucky cover"
+            />
+            <div class="mini-player-info">
+              <h4>Get Lucky (feat. Pharrell Willia...</h4>
+              <p>Daft Punk</p>
+            </div>
+          </div>
+          <div class="mini-player-controls">
+            <button>
+              <img src="assets/icons/mob.player.icon/plus.svg" alt="add" />
+            </button>
+            <button>
+              <img src="assets/icons/mob.player.icon/play.svg" alt="play" />
+            </button>
+          </div>
+          <!-- Progress bar -->
+          <div class="mini-player-progress">
+            <div class="mini-player-progress-bar"></div>
+          </div>
         </div>
-        <img src="assets/icons/player.icons/heart.icon.png" alt="heart icon" />
-        <img src="assets/icons/player.icons/plus.icon.png" alt="plus icon" />
-        <img
-          src="assets/icons/player.icons/pc-lyrics.icon.png"
-          alt="lyrics icon"
-        />
-        <img
-          src="assets/icons/player.icons/dinamic.icon.png"
-          alt="dinamic icon"
-        />
-        <img src="assets/icons/homemmain.icons/dots.icon.png" alt="dots icon" />
-        <img
-          src="assets/icons/player.icons/vertical.line.icon.png"
-          alt="vertical line icon"
-        />
-        <img
-          src="assets/icons/player.icons/circle.icon.png"
-          alt="circle icon"
-        />
-        <img
-          src="assets/icons/player.icons/burger.icon.png"
-          alt="burger icon"
-        />
+
+        <!-- Bottom Nav -->
+        <nav class="mobile-bottom-nav">
+          <a href="#" class="mobile-nav-item active">
+            <img
+              src="assets/icons/menu.bar.icons/home.active.icon.svg"
+              alt="Home"
+            />
+            <span>Home</span>
+          </a>
+          <a href="#" class="mobile-nav-item">
+            <img
+              src="assets/icons/menu.bar.icons/star.off.icon.svg"
+              alt="Discover"
+            />
+            <span>Discover</span>
+          </a>
+          <a href="#" class="mobile-nav-item">
+            <img
+              src="assets/icons/menu.bar.icons/search.off.icon.svg"
+              alt="Search"
+            />
+            <span>Search</span>
+          </a>
+          <a href="library.html" class="mobile-nav-item">
+            <img
+              src="assets/icons/menu.bar.icons/library.icon.svg"
+              alt="Library"
+            />
+            <span>Library</span>
+          </a>
+          <a href="#" class="mobile-nav-item">
+            <img src="assets/icons/menu.bar.icons/me icon.svg" alt="Me" />
+            <span>Me</span>
+          </a>
+        </nav>
       </section>
     </footer>
      

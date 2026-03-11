@@ -14,13 +14,17 @@ width: 100%;
  }
 //header//
 .my-isolated-header {
+    // ვაუქმებთ გლობალურ მარჯინს კონკრეტულად ამ header-ისთვის
     margin-left: 0 !important;
     width: 100% !important;
   
-    aside{
-      position:fixed;
+    aside {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 280px;
       height: 100vh;
+      background-color: #0d101a; // ჩაანაცვლე შენი ფერით
       z-index: 1000;
     }
   }

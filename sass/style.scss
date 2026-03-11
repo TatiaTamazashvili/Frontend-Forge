@@ -1,7 +1,9 @@
 @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
+
 @use './base/reset';
 @use './base/base';
+@use "./pages/profile";
 @use './layout/playerbar';
 @use 'layout/header';
 @use './pages/home';
@@ -9,4 +11,4 @@
 @use './pages/library';
 @use './pages/playlist';
 @use './pages/search';
-@use './pages/profile';
+@use './pages/song';
