@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-</head>
-<body>
-     <!--header-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+  </head>
+  <body>
+    <!--header-->
 
-     <header class="site-header">
+    <header class="site-header">
       <nav class="header-nav">
         <!-- left side -->
         <div class="nav-left">
-          <a href="#" class="nav-item active">
+          <a href="index.html" target="_parent" class="nav-item active">
             <img
               alt="home. icon"
               src="assets/icons/menu.bar.icons/home.active.icon.svg"
@@ -28,7 +28,7 @@
             />
             <span>Discover</span>
           </a>
-          <a href="#" class="nav-item">
+          <a href="search.html" target="_parent" class="nav-item">
             <img
               alt="search icon"
               src="assets/icons/menu.bar.icons/search.off.icon.svg"
@@ -73,27 +73,106 @@
       </nav>
     </header>
 
-    <!--desktop aside layout-->
-    <aside>
+    <!--sidebar-->
+    <aside class="sidebar">
+      <!--desktop-version-sidebar-->
       <div class="desktop-aside">
-         <ul class="aside-elements">
-            <li><a href="library.html"><img src="assets/icons/sidebar.icons/libraryicon.png" alt="library">Library</a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/pin.png" alt="pin">Pins <img class="sidebar-arrow-right" src="assets/icons/sidebar.icons/sidebar.arrowicon.png" alt="arrow-right"></a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/playlisticon.png" alt="Playlists">Playlists <img class="sidebar-arrow-right" src="assets/icons/sidebar.icons/sidebar.arrowicon.png" alt="arrow-right"></a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/likedsongicon.png" alt="Liked-songs">Liked songs</a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/savesicon.png" alt="Saves">Saves</a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/albumsicon.png" alt="Albums">Albums</a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/foldersicon.png" alt="Folders">Folders</a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/podcastsicon.png" alt="Podcasts">Podcasts</a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/audiobooksicon.png" alt="Audiobooks">Audiobooks</a></li>
-           <li><a href="#"><img src="./assets/icons/sidebar.icons/artistsicon.png" alt="Artists">Artists</a></li>
-         </ul>
-       </div> 
-   </aside>
-   <main>
-       <!--desktop main layout-->
-       <div class="search-desktop">
-         <section class="recent-searches">
+        <ul class="aside-elements">
+          <li>
+            <a href="library.html" target="_parent">
+              <img
+                src="./assets/icons/sidebar.icons/libraryicon.png"
+                alt="pin"
+              />Library
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/icons/sidebar.icons/pin.png" alt="pin" />Pins
+              <img
+                class="sidebar-arrow-right"
+                src="assets/icons/sidebar.icons/sidebar.arrowicon.png"
+                alt="arrow-right"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="playlist.html" target="_parent">
+              <img
+                src="./assets/icons/sidebar.icons/playlisticon.png"
+                alt="Playlists"
+              />Playlists
+              <img
+                class="sidebar-arrow-right"
+                src="assets/icons/sidebar.icons/sidebar.arrowicon.png"
+                alt="arrow-right"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/sidebar.icons/likedsongicon.png"
+                alt="Liked-songs"
+              />Liked songs
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/sidebar.icons/savesicon.png"
+                alt="Saves"
+              />Saves
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/sidebar.icons/albumsicon.png"
+                alt="Albums"
+              />Albums
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/sidebar.icons/foldersicon.png"
+                alt="Folders"
+              />Folders
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/sidebar.icons/podcastsicon.png"
+                alt="Podcasts"
+              />Podcasts
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/sidebar.icons/audiobooksicon.png"
+                alt="Audiobooks"
+              />Audiobooks
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icons/sidebar.icons/artistsicon.png"
+                alt="Artists"
+              />Artists
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <div class="search-main-content">
+        <!--desktop main layout-->
+        <div class="search-desktop">
+          <section class="recent-searches">
             <h3>Recent searches</h3>
             <div class="recent-searches-list">
               <div class="recent-searches-card">
@@ -280,7 +359,8 @@
             </div>
           </section>
         </div>
-      </main>
+      </div>
+    </main>
 
     <!-- footer / player bar -->
     <footer class="player-bar">
@@ -336,7 +416,7 @@
           <button>
             <img alt="plus icon" src="assets/icons/player.icons/plus.svg" />
           </button>
-          <button>
+          <button onclick="window.location.href = 'song.html'">
             <img
               alt="lyrics icon"
               src="assets/icons/player.icons/pc-lyrics.svg"
@@ -391,7 +471,7 @@
 
         <!-- Bottom Nav -->
         <nav class="mobile-bottom-nav">
-          <a href="#" class="mobile-nav-item active">
+          <a href="index.html" target="_parent" class="mobile-nav-item active">
             <img
               src="assets/icons/menu.bar.icons/home.active.icon.svg"
               alt="Home"
@@ -405,7 +485,7 @@
             />
             <span>Discover</span>
           </a>
-          <a href="#" class="mobile-nav-item">
+          <a href="search.html" target="_parent" class="mobile-nav-item">
             <img
               src="assets/icons/menu.bar.icons/search.off.icon.svg"
               alt="Search"
@@ -419,18 +499,12 @@
             />
             <span>Library</span>
           </a>
-          <a href="#" class="mobile-nav-item">
+          <a href="profile.html" target="_parent" class="mobile-nav-item">
             <img src="assets/icons/menu.bar.icons/me icon.svg" alt="Me" />
             <span>Me</span>
           </a>
         </nav>
       </section>
     </footer>
-     
-</body>
-</html>
-
-    </div>
   </body>
 </html>
-
