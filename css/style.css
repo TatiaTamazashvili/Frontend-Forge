@@ -2256,4 +2256,70 @@ figcaption p {
   object-fit: fill;
 }
 
+.about-artist-container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  margin-bottom: 200px;
+  margin-top: 40px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+}
+
+.star-logo-card {
+  width: 130px;
+  height: 130px;
+  color: #E0E0E0;
+  position: relative;
+}
+.star-logo-card p {
+  width: 80px;
+  height: 70px;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  line-height: 1.3;
+}
+.star-logo-card span {
+  font-size: 30px;
+}
+
+.textbox-about-artist {
+  color: #E0E0E0;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 1.75;
+  letter-spacing: 3%;
+  color: #898989;
+  width: 50%;
+}
+
+.about-artist-container-aside {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.75;
+  padding-right: 130px;
+}
+
+.numbers-about-artist {
+  font-size: 30px;
+  color: #E0E0E0;
+}
+
+.low-font {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
