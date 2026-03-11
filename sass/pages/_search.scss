@@ -2,6 +2,7 @@
 @use "../abstracts/variables" as *;
 @use "../base/base" as *;
 @use "../base/reset" as *;
+
 .search-mobile {
 background-color:$color-bg-main;
 
@@ -65,6 +66,7 @@ color: $color-fg-primary;
 padding: 15px;   
 }
 }
+
 //cards//
 .Discover {
 display: grid;

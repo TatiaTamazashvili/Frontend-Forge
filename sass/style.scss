@@ -3,7 +3,7 @@
 
 @use './base/reset';
 @use './base/base';
-
+@use "./pages/profile";
 @use './layout/playerbar';
 @use 'layout/header';
 @use './pages/home';
@@ -12,4 +12,6 @@
 @use './pages/playlist';
 @use './pages/search';
 @use './pages/song';
-@use './pages/profile'
+@use './pages/profile';
+  @use './pages/artist';
+@use './pages/aboutartist';
