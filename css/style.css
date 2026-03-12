@@ -595,6 +595,18 @@ h2 {
   align-items: center;
   width: 100%;
   gap: 10px;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+  text-decoration: none;
+}
+.desktop-aside li a img {
+  transition: filter 0.2s ease-in-out;
+}
+.desktop-aside li a:hover {
+  color: #ffffff;
+}
+.desktop-aside li a:hover img {
+  filter: brightness(0) invert(1);
 }
 .desktop-aside li img {
   width: 4vw;
