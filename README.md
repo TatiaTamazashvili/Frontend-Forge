@@ -73,3 +73,22 @@ These parts were built using semantic HTML and SCSS styling.
 The mobile responsive version of the page was implemented by another team member, who adapted the layout for smaller screens using responsive styles.
 
 
+**Nana's Contribution**
+
+I worked on several core navigational components and page layouts, including:
+
+1 Global Sidebar (desktop version across all pages)
+
+2 Profile Page layout
+
+3 Search Page (including fully responsive mobile and desktop designs)
+
+4 Playlist Page (including fully responsive mobile and desktop designs)
+
+5 Artist Page
+
+6 About Artist Page
+
+These sections were built using semantic HTML and structured SCSS components.
+
+
